@@ -228,5 +228,7 @@ app.add_handler(CommandHandler("stop", stop_command))
 app.add_handler(CallbackQueryHandler(join_button, pattern="^join$"))
 app.add_handler(CallbackQueryHandler(vote_button, pattern="^vote:"))
 
-app.run_polling()
+if __name__ == "__main__":
+    app.run_polling()
+
 
